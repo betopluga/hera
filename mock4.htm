@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hera Repo</title>
+  <meta name="description" content="Hera">
+  <meta name="author" content="SmartseTeam">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="bootstrap/css/mock4.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body class="text-center">
+    <div class="faixa"> </div>
+    <div class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
+        <main role="main" class="inner cover mt-5">
+            <img src="img/logo_gog.png">
+            <div class="input-group mt-5">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchcombo">Title Abstract Keywords</button>
+                    <div class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Title Abstract Keywords</a></li>
+                        <li><a class="dropdown-item" href="#">Title</a></li>
+                        <li><a class="dropdown-item" href="#">Abstract</a></li>
+                        <li><a class="dropdown-item" href="#">Keywords</a></li>
+                        <li><a class="dropdown-item" href="#">Author</a></li>
+                        <div class="dropdown-divider"></div>              
+                        <div class="form-check ml-4">
+                            <input class="form-check-input" type="checkbox" value="2" id="2nd">
+                            <label class="form-check-label" for="2nd"></label>
+                            Secondary Studies
+                            </label>
+                        </div>
+                        <div class="form-check ml-4">
+                            <input class="form-check-input" type="checkbox" value="3" id="3nd">
+                            <label class="form-check-label" for="3nd"></label>
+                            Tertiary Studies
+                            </label>
+                        </div>              
+                    </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button" size="40">
+                <div class="input-group-append">
+                    <div class="input-group-text"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</div>
+                </div>
+            </div>
+            <div class="slogan mt-3">
+                The state-of-the-art of your research
+            </div>
+        </main>
+    </div>
+    <footer>
+        <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Methodology</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $('.dropdown-menu a').click(function(){
+          $('#searchcombo').text($(this).text());
+        });
+    </script>  
+</body>
+</html>
