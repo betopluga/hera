@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hera Repo</title>
+  <meta name="description" content="Hera">
+  <meta name="author" content="SmartseTeam">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="bootstrap/css/mock2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="faixa"> </div>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom">
+      <div class="my-0 mr-md-auto">
+        <img src="img/logo_menor.png">
+      </div>
+      <nav class="my-2 my-md-0 mr-md-0">
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchcombo">Title Abstract Keywords</button>
+            <div class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Title Abstract Keywords</a></li>
+              <li><a class="dropdown-item" href="#">Title</a></li>
+              <li><a class="dropdown-item" href="#">Abstract</a></li>
+              <li><a class="dropdown-item" href="#">Keywords</a></li>
+              <li><a class="dropdown-item" href="#">Author</a></li>
+              <div class="dropdown-divider"></div>              
+              <div class="form-check ml-4">
+                <input class="form-check-input" type="checkbox" value="2" id="2nd">
+                <label class="form-check-label" for="2nd"></label>
+                  Secondary Studies
+                </label>
+              </div>
+              <div class="form-check ml-4">
+                <input class="form-check-input" type="checkbox" value="3" id="3nd">
+                <label class="form-check-label" for="3nd"></label>
+                  Tertiary Studies
+                </label>
+              </div>              
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          <div class="input-group-append">
+            <div class="input-group-text"><i class="fa fa-search"></i></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid pt-2">
+      <div class="row">
+          <div class="col-9">
+              <div class="card pb-2">
+                  <div class="card-header">
+                    Welcome...
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">...to state-of-the-art of your research</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+                      Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+                      Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+                      Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+                      </p>
+                    <a href="#" class="btn btn-danger">Go somewhere</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="card mt-2">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $('.dropdown-menu a').click(function(){
+        $('#searchcombo').text($(this).text());
+      });
+    </script>  
+</body>
+</html>
