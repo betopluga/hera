@@ -14,16 +14,32 @@
     <div class="faixa"> </div>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom">
       <div class="my-0 mr-md-auto">
-        <img src="img/logo_menor.png">
+        <a href="mock2.htm"><img src="img/logo_menor.png"></a>
       </div>
     </div>
-    <nav class="navbar navbar-light bg-light">
-      <span class="navbar-brand mb-0"><h6>Secondary and Tertiary studies matching "xpto" in Title Abstract Keywords</h6></span>
-    </nav>
+    <div class="col-12 light-gray">
+        <div class="row align-items-start">
+            <div class="col-2 pt-2">
+                <h5 class="menu-title">Menu</h5>
+            </div>
+            <div class="col-10 p-0 pt-1 pr-3 pl-4">
+                <div class="row align-items-start">
+                    <div class="col-6 text-left">
+                    </div>
+                    <div class="col-6 text-right">
+                        <label class="mr-3">
+                            <small>All</small>
+                            <input type="checkbox" class="all" onclick="checkAll()">
+                        </label>    
+                        <button type="button" class="btn btn-secondary btn-sm">Export CSV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="col-12">
         <div class="row align-items-start">
             <div class="col-2 light-gray">
-                <h5 class="menu-title">Menu</h5>
                 <small><a data-toggle="collapse" href="#studytype" role="button" aria-expanded="false" aria-controls="studytype"><strong><i class="fas fa-graduation-cap"></i> &nbsp;Study Type</strong></a></small>
                 <div class="multi-collapse mt-1" id="studytype">
                     <label>
@@ -35,7 +51,7 @@
                         <small>Secundary Studies</small>
                     </label>
                 </div>
-                <br>
+                <hr>
                 <small><a data-toggle="collapse" href="#year" role="button" aria-expanded="false" aria-controls="year"><strong><i class="far fa-calendar-alt"></i> &nbsp;Year</strong></a></small>
                 <div class="multi-collapse mt-1" id="year">
                     <div class="slidecontainer">
@@ -44,23 +60,23 @@
                         <p><small>Custom range: <input type="text" size="4"> to <input type="text" size="4"></small></p>
                     </div>
                 </div>
-                <br>
+                <hr>
                 <small><a data-toggle="collapse" href="#sourcetitle" role="button" aria-expanded="false" aria-controls="sourcetitle"><strong><i class="fas fa-book-open"></i> &nbsp;Source Title</strong></a></small>
                 <div class="multi-collapse mt-1" id="sourcetitle">
                     <label>
                         <input type="text">
                     </label>
                 </div>
-                <br>
+                <hr>
                 <small><a data-toggle="collapse" href="#keywords" role="button" aria-expanded="false" aria-controls="keywords"><strong><i class="fas fa-key"></i> &nbsp;Domain Keywords</strong></a></small>
                 <div class="multi-collapse mt-1" id="keywords">
                     <input type="text" size="15">
                     <span class="badge badge-success">Add</span>
-                    <br>
+                    <br><br>
                     <span class="badge badge-info">lorem</span>
                     <span class="badge badge-info">ipsum</span>
                 </div>
-                <br>
+                <hr>
                 <small><a data-toggle="collapse" href="#language" role="button" aria-expanded="false" aria-controls="language"><strong><i class="fas fa-globe-americas"></i> &nbsp;Language</strong></a></small>
                 <div class="multi-collapse mt-1 col-sm-*" id="language">
                     <select class="sl-size">
@@ -68,16 +84,94 @@
                         <option>Portuguese</option>
                     </select>
                     <span class="badge badge-success">Add</span>
-                    <br>
+                    <br><br>
                     <span class="badge badge-info">French</span>
                     <span class="badge badge-info">Spanish</span>
                 </div>
-                <br><br>
+                <hr><br>
                 <p><button type="button" class="btn btn-success">Refresh</button></p>
                 <br>
             </div>
-            <div class="col-10">
-                content
+            <div class="col-10 p-0">
+                <div class="pl-4 pt-4">
+                    <h6>Secondary and Tertiary studies matching "Search String" in Title Abstract Keywords</h6>
+                    <div class="col-12 p-0 pr-3">
+                        <div class="row align-items-start">
+                            <div class="col-6 text-left">
+                                <small class="menu-title"><strong>3 results</strong></small>
+                            </div>
+                            <div class="col-6 text-right">
+                                <small>Results per page </small>
+                                <select class="sl-size">
+                                    <option>15</option>
+                                    <option>25</option>
+                                    <option>50</option>
+                                    <option>100</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 ml-1">
+                        <div class="row align-items-start">
+                            <span class="sl-size mr-2">1 </span><input type="checkbox" class="studies_check">
+                            <div class="border-left ml-2">
+                                <span class="ml-1">
+                                    <span class="h6-green">Practical similarities and differences between Systematic Literature Reviews and Systematic Mappings: a tertiary study</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">Bianca Minetto Napoleão, Katia Felizardo, Erica Ferreira de Souza, Nandamudi Vijaykumar</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">July 2017, The 29th International Conference on Software Engineering and Knowledge Engineering</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">Secundary Study</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0"><a href="#">Abstract <i class="fas fa-angle-down"></i></a></span>
+                                    <span class="ml-1 sl-size mt-0"><a href="#">Keywords <i class="fas fa-angle-down"></i></a></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 ml-1">
+                        <div class="row align-items-start">
+                            <span class="sl-size mr-2">2 </span><input type="checkbox" class="studies_check">
+                            <div class="border-left ml-2">
+                                <span class="ml-1">
+                                    <span class="h6-green">Establishing a Search String to Detect Secondary Studies in Software Engineering</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">Bianca Minetto Napoleão, Katia Romero Felizardo, Erica Ferreira de Souza, Sylvain Hallé</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">December 2019</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">Secundary Study</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0"><a href="#">Abstract <i class="fas fa-angle-down"></i></a></span>
+                                    <span class="ml-1 sl-size mt-0"><a href="#">Keywords <i class="fas fa-angle-down"></i></a></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 ml-1">
+                        <div class="row align-items-start">
+                            <span class="sl-size mr-2">3 </span><input type="checkbox" class="studies_check">
+                            <div class="border-left ml-2">
+                                <span class="ml-1">
+                                    <span class="h6-green">Using meta-ethnography to synthesize research on knowledge management and agile software development methodology</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">Glauco Ruiz, Bianca Minetto Napoleão, Erica Ferreira de Souza, Nandamudi L. Vijaykumar</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">October 2018, The 17th Brazilian Symposium</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0">Tertiary Study</span>
+                                    <br>
+                                    <span class="ml-1 sl-size mt-0"><a href="#">Abstract <i class="fas fa-angle-down"></i></a></span>
+                                    <span class="ml-1 sl-size mt-0"><a href="#">Keywords <i class="fas fa-angle-down"></i></a></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>            
         </div>
     </div>
@@ -108,6 +202,15 @@
         slider.oninput = function() {
           output.innerHTML = this.value;
         }
-    </script> 
+    </script>
+    <script>
+        function checkAll(){
+            if ($('.all').is(':checked')) {
+                $(".studies_check").prop('checked', true);
+            } else {
+                $(".studies_check").prop('checked', false);
+            }
+        }
+    </script>
 </body>
 </html>
