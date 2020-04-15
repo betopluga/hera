@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hera Repo</title>
+  <meta name="description" content="Hera">
+  <meta name="author" content="SmartseTeam">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="font-awesome/css/all.css" rel="stylesheet">
+  <link href="bootstrap/css/mock2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="faixa"> </div>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom">
+      <div class="my-0 mr-md-auto">
+        <img src="img/logo_menor.png">
+      </div>
+    </div>
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0"><h6>Secondary and Tertiary studies matching "xpto" in Title Abstract Keywords</h6></span>
+    </nav>
+    <div class="col-12">
+        <div class="row align-items-start">
+            <div class="col-2 light-gray">
+                <h5 class="menu-title">Menu</h5>
+                <small><a data-toggle="collapse" href="#studytype" role="button" aria-expanded="false" aria-controls="studytype"><strong><i class="fas fa-graduation-cap"></i> &nbsp;Study Type</strong></a></small>
+                <div class="multi-collapse mt-1" id="studytype">
+                    <label>
+                        <input type="checkbox" name="studytype" value="3nd">
+                        <small>Tertiary Studies</small>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="studytype" value="2nd">
+                        <small>Secundary Studies</small>
+                    </label>
+                </div>
+                <br>
+                <small><a data-toggle="collapse" href="#year" role="button" aria-expanded="false" aria-controls="year"><strong><i class="far fa-calendar-alt"></i> &nbsp;Year</strong></a></small>
+                <div class="multi-collapse mt-1" id="year">
+                    <div class="slidecontainer">
+                        <input type="range" min="2000" max="2020" value="2010" class="slider" id="yearslider">
+                        <p><small><span id="demo"></span></small></p>
+                        <p><small>Custom range: <input type="text" size="4"> to <input type="text" size="4"></small></p>
+                    </div>
+                </div>
+                <br>
+                <small><a data-toggle="collapse" href="#sourcetitle" role="button" aria-expanded="false" aria-controls="sourcetitle"><strong><i class="fas fa-book-open"></i> &nbsp;Source Title</strong></a></small>
+                <div class="multi-collapse mt-1" id="sourcetitle">
+                    <label>
+                        <input type="text">
+                    </label>
+                </div>
+                <br>
+                <small><a data-toggle="collapse" href="#keywords" role="button" aria-expanded="false" aria-controls="keywords"><strong><i class="fas fa-key"></i> &nbsp;Domain Keywords</strong></a></small>
+                <div class="multi-collapse mt-1" id="keywords">
+                    <input type="text" size="15">
+                    <span class="badge badge-success">Add</span>
+                    <br>
+                    <span class="badge badge-info">lorem</span>
+                    <span class="badge badge-info">ipsum</span>
+                </div>
+                <br>
+                <small><a data-toggle="collapse" href="#language" role="button" aria-expanded="false" aria-controls="language"><strong><i class="fas fa-globe-americas"></i> &nbsp;Language</strong></a></small>
+                <div class="multi-collapse mt-1 col-sm-*" id="language">
+                    <select class="sl-size">
+                        <option>English</option>
+                        <option>Portuguese</option>
+                    </select>
+                    <span class="badge badge-success">Add</span>
+                    <br>
+                    <span class="badge badge-info">French</span>
+                    <span class="badge badge-info">Spanish</span>
+                </div>
+                <br><br>
+                <p><button type="button" class="btn btn-success">Refresh</button></p>
+                <br>
+            </div>
+            <div class="col-10">
+                content
+            </div>            
+        </div>
+    </div>
+    <footer class="col-12 gray pt-3 pb-3">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4 pt-4">
+            <img src="img/uqac.png">
+            <br>
+            Université du Québec à Chicoutimi
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 pt-3">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 pt-3 text-right">
+            <img src="img/lif.png">
+            <br>
+            Laboratoire d'informatique formelle
+          </div>
+        </div>
+    </footer>
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        var slider = document.getElementById("yearslider");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+    </script> 
+</body>
+</html>
