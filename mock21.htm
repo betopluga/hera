@@ -19,19 +19,24 @@
     </div>
     <div class="col-12 light-gray">
         <div class="row align-items-start">
-            <div class="col-2 pt-2">
+            <div class="col-3 pt-2">
                 <h5 class="menu-title">Menu</h5>
             </div>
-            <div class="col-10 p-0 pt-1 pr-3 pl-4">
+            <div class="col-9 p-0 pt-1 pr-3 pl-4">
                 <div class="row align-items-start">
                     <div class="col-6 text-left">
-                    </div>
-                    <div class="col-6 text-right">
-                        <label class="mr-3">
+                        <label class="mr-2">
                             <small>All</small>
                             <input type="checkbox" class="all" onclick="checkAll()">
                         </label>    
-                        <button type="button" class="btn btn-secondary btn-sm">Export CSV</button>
+                        <button type="button" class="btn btn-link btn-sm">Export CSV</button>
+                    </div>
+                    <div class="col-6 text-right">
+                        <small>Sort by </small>
+                        <select class="sl-size">
+                            <option>Ascending</option>
+                            <option>Descending</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -39,62 +44,119 @@
     </div>
     <div class="col-12">
         <div class="row align-items-start">
-            <div class="col-2 light-gray">
+            <div class="col-3 light-gray">
                 <small><a data-toggle="collapse" href="#studytype" role="button" aria-expanded="false" aria-controls="studytype"><strong><i class="fas fa-graduation-cap"></i> &nbsp;Study Type</strong></a></small>
                 <div class="multi-collapse mt-1" id="studytype">
-                    <label>
-                        <input type="checkbox" name="studytype" value="3nd">
-                        <small>Tertiary Studies</small>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="studytype" value="2nd">
-                        <small>Secundary Studies</small>
-                    </label>
+                    <div class="row pl-3">
+                        <label>
+                            <input type="checkbox" name="studytype" value="3nd">
+                            <small>Tertiary Studies</small>
+                        </label>    
+                    </div>
+                    <div class="row pl-3">
+                        <label>
+                            <input type="checkbox" name="studytype" value="2nd">
+                            <small>Secundary Studies</small>
+                        </label>    
+                    </div>
+                    <div class="row pl-5">
+                        <label>
+                            <input type="checkbox" name="studytype" value="2nd">
+                            <small><i>Systematic Review</i></small>
+                        </label>    
+                    </div>
+                    <div class="row pl-5">
+                        <label>
+                            <input type="checkbox" name="studytype" value="2nd">
+                            <small><i>Systematic Mapping</i></small>
+                        </label>    
+                    </div>
                 </div>
                 <hr>
                 <small><a data-toggle="collapse" href="#year" role="button" aria-expanded="false" aria-controls="year"><strong><i class="far fa-calendar-alt"></i> &nbsp;Year</strong></a></small>
                 <div class="multi-collapse mt-1" id="year">
                     <div class="slidecontainer">
-                        <input type="range" min="2000" max="2020" value="2010" class="slider" id="yearslider">
-                        <p><small><span id="demo"></span></small></p>
-                        <p><small>Custom range: <input type="text" size="4"> to <input type="text" size="4"></small></p>
+                        <input type="range" min="2010" max="2020" value="2015" class="slider" id="yearslider">
+                        <div class="row">
+                            <div class="col-sm small">
+                                2010
+                            </div>
+                            <div id="demo" class="col-sm small"></div>
+                            <div class="col-sm small">
+                                2020
+                            </div>
+                        </div>
+                        <br>
+                        <p><small>Custom range: <input type="text" size="4" value="2008"> to <input type="text" size="4" value="2020"></small></p>
                     </div>
                 </div>
                 <hr>
                 <small><a data-toggle="collapse" href="#sourcetitle" role="button" aria-expanded="false" aria-controls="sourcetitle"><strong><i class="fas fa-book-open"></i> &nbsp;Source Title</strong></a></small>
                 <div class="multi-collapse mt-1" id="sourcetitle">
-                    <label>
-                        <input type="text">
-                    </label>
+                    <div class="container small">
+                        <div class="row">
+                            <div class="col-10 pl-0"><span class="mais">+</span> Information and Software Technology</div>
+                            <div class="col-2">(2)</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 pl-0"><span class="mais">+</span> Empirical Software Engineering</div>
+                            <div class="col-2">(1)</div>
+                        </div>    
+                    </div>
                 </div>
                 <hr>
                 <small><a data-toggle="collapse" href="#keywords" role="button" aria-expanded="false" aria-controls="keywords"><strong><i class="fas fa-key"></i> &nbsp;Domain Keywords</strong></a></small>
                 <div class="multi-collapse mt-1" id="keywords">
-                    <input type="text" size="15">
-                    <span class="badge badge-success">Add</span>
-                    <br><br>
-                    <span class="badge badge-info">lorem</span>
-                    <span class="badge badge-info">ipsum</span>
+                    <div class="container small">
+                        <div class="row">
+                            <span class="mais">+ </span>&nbsp;Evidence-based software engineering
+                        </div>
+                        <div class="row pl-3">
+                            Effect size
+                        </div>
+                        <div class="row pl-3">
+                            Meta-analysis
+                        </div>
+                        <div class="row pl-3">
+                            Families of experiments
+                        </div>
+                        <div class="row pl-3">
+                            Reproducible research
+                        </div>
+                        <div class="row">
+                            <span class="mais">+ </span>&nbsp;Software engineering
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <small><a data-toggle="collapse" href="#language" role="button" aria-expanded="false" aria-controls="language"><strong><i class="fas fa-globe-americas"></i> &nbsp;Language</strong></a></small>
                 <div class="multi-collapse mt-1 col-sm-*" id="language">
-                    <select class="sl-size">
-                        <option>English</option>
-                        <option>Portuguese</option>
-                    </select>
-                    <span class="badge badge-success">Add</span>
-                    <br><br>
-                    <span class="badge badge-info">French</span>
-                    <span class="badge badge-info">Spanish</span>
+                    <div class="container small">
+                        <div class="row">
+                            <div class="col-10 pl-0"><span class="mais">+</span> <strong>English</strong></div>
+                            <div class="col-2"><strong>(3)</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 pl-0"><span class="mais">+</span> Spanish</div>
+                            <div class="col-2">(1)</div>
+                        </div>    
+                        <div class="row">
+                            <div class="col-10 pl-0"><span class="mais">+</span> French</div>
+                            <div class="col-2">(1)</div>
+                        </div>    
+                        <div class="row">
+                            <div class="col-10 pl-0"><span class="mais">+</span> Chinese</div>
+                            <div class="col-2">(1)</div>
+                        </div>    
+                    </div>
                 </div>
                 <hr><br>
                 <p><button type="button" class="btn btn-success">Refresh</button></p>
                 <br>
             </div>
-            <div class="col-10 p-0">
+            <div class="col-9 p-0">
                 <div class="pl-4 pt-4">
-                    <h6>Secondary and Tertiary studies matching "Search String" in Title Abstract Keywords</h6>
+                    <h6>Secondary and Tertiary studies matching "Systematic Review" in Title, Abstract Keywords</h6>
                     <div class="col-12 p-0 pr-3">
                         <div class="row align-items-start">
                             <div class="col-6 text-left">
@@ -117,13 +179,13 @@
                             <span class="sl-size mr-2">1 </span><input type="checkbox" class="studies_check">
                             <div class="border-left ml-2">
                                 <span class="ml-1">
-                                    <span class="h6-green">Practical similarities and differences between Systematic Literature Reviews and Systematic Mappings: a tertiary study</span>
+                                    <span class="h6-green">Meta-analysis for families of experiments in software engineering: a systematic review and reproducibility and validity assessment</span>
                                     <br>
-                                    <span class="ml-1 sl-size mt-0">Bianca Minetto Napoleão, Katia Felizardo, Erica Ferreira de Souza, Nandamudi Vijaykumar</span>
+                                    <span class="ml-1 sl-size mt-0">Barbara Kitchenham, Lech Madeyski, Pearl Brereton</span>
                                     <br>
-                                    <span class="ml-1 sl-size mt-0">July 2017, The 29th International Conference on Software Engineering and Knowledge Engineering</span>
+                                    <span class="ml-1 sl-size mt-0">January 2020, Empirical Software Engineering</span>
                                     <br>
-                                    <span class="ml-1 sl-size mt-0">Secundary Study</span>
+                                    <span class="ml-1 sl-size mt-0">Systematic Review</span>
                                     <br>
                                     <span class="ml-1 sl-size mt-0"><a href="#">Abstract <i class="fas fa-angle-down"></i></a></span>
                                     <span class="ml-1 sl-size mt-0"><a href="#">Keywords <i class="fas fa-angle-down"></i></a></span>
@@ -137,13 +199,13 @@
                             <span class="sl-size mr-2">2 </span><input type="checkbox" class="studies_check">
                             <div class="border-left ml-2">
                                 <span class="ml-1">
-                                    <span class="h6-green">Establishing a Search String to Detect Secondary Studies in Software Engineering</span>
+                                    <span class="h6-green">Guidelines for conducting systematic mapping studies in software engineering: An update</span>
                                     <br>
-                                    <span class="ml-1 sl-size mt-0">Bianca Minetto Napoleão, Katia Romero Felizardo, Erica Ferreira de Souza, Sylvain Hallé</span>
+                                    <span class="ml-1 sl-size mt-0">Kai Petersen, Sairam Vakkalanka, Ludwik Kuzniarz</span>
                                     <br>
-                                    <span class="ml-1 sl-size mt-0">December 2019</span>
+                                    <span class="ml-1 sl-size mt-0">August 2015, Information and Software Technology</span>
                                     <br>
-                                    <span class="ml-1 sl-size mt-0">Secundary Study</span>
+                                    <span class="ml-1 sl-size mt-0">Systematic Mapping</span>
                                     <br>
                                     <span class="ml-1 sl-size mt-0"><a href="#">Abstract <i class="fas fa-angle-down"></i></a></span>
                                     <span class="ml-1 sl-size mt-0"><a href="#">Keywords <i class="fas fa-angle-down"></i></a></span>
@@ -157,11 +219,11 @@
                             <span class="sl-size mr-2">3 </span><input type="checkbox" class="studies_check">
                             <div class="border-left ml-2">
                                 <span class="ml-1">
-                                    <span class="h6-green">Using meta-ethnography to synthesize research on knowledge management and agile software development methodology</span>
+                                    <span class="h6-green">Systematic literature reviews in software engineering – A tertiary study</span>
                                     <br>
-                                    <span class="ml-1 sl-size mt-0">Glauco Ruiz, Bianca Minetto Napoleão, Erica Ferreira de Souza, Nandamudi L. Vijaykumar</span>
+                                    <span class="ml-1 sl-size mt-0">Barbara Kitchenham, Rialette Pretorius, David Budgen, O. Pearl Brereton, Mark Turner, Mahmood Niazi, Stephen Linkman</span>
                                     <br>
-                                    <span class="ml-1 sl-size mt-0">October 2018, The 17th Brazilian Symposium</span>
+                                    <span class="ml-1 sl-size mt-0">March 2010, Information and Software Technology</span>
                                     <br>
                                     <span class="ml-1 sl-size mt-0">Tertiary Study</span>
                                     <br>
@@ -175,12 +237,23 @@
             </div>            
         </div>
     </div>
-    <footer class="col-12 gray pt-3 pb-3">
+    <footer class="footer col-12 gray pt-3 pb-3">
         <div class="row text-center text-xs-center text-sm-left text-md-left">
           <div class="col-xs-12 col-sm-4 col-md-4 pt-4">
             <img src="img/uqac.png">
-            <br>
+            <br><br>
             Université du Québec à Chicoutimi
+            <small>
+            <br>
+            555, boulevard de l’Université
+            <br>
+            Chicoutimi (Québec)
+            <br>
+            Canada  G7H 2B1
+            <br><br>
+            418 545-5011<br>
+            1 800 463-9880 (sans frais)
+          </small>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 pt-3">
           </div>

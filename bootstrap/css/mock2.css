@@ -9,6 +9,10 @@
     background-color: #f2f2f2;
 }
 
+.red{
+    background-color: #CB6763;
+}
+
 .light-gray{
     background-color: #F8F9FA;
 }
@@ -80,4 +84,18 @@ a:active{
     color: #4CAF50;
     text-decoration: underline;
     font-weight: bold;
+}
+
+.move-left {
+    width: auto;
+    box-shadow: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.mais{
+    font-weight: bold;
+    color: #25A2B7;
 }
