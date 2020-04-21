@@ -34,8 +34,8 @@
                     <div class="col-6 text-right">
                         <small>Sort by </small>
                         <select class="sl-size">
-                            <option>Ascending</option>
-                            <option>Descending</option>
+                            <option>Title</option>
+                            <option>Author</option>
                         </select>
                     </div>
                 </div>
@@ -75,20 +75,7 @@
                 <hr>
                 <small><a data-toggle="collapse" href="#year" role="button" aria-expanded="false" aria-controls="year"><strong><i class="far fa-calendar-alt"></i> &nbsp;Year</strong></a></small>
                 <div class="multi-collapse mt-1" id="year">
-                    <div class="slidecontainer">
-                        <input type="range" min="2010" max="2020" value="2015" class="slider" id="yearslider">
-                        <div class="row">
-                            <div class="col-sm small">
-                                2010
-                            </div>
-                            <div id="demo" class="col-sm small"></div>
-                            <div class="col-sm small">
-                                2020
-                            </div>
-                        </div>
-                        <br>
-                        <p><small>Custom range: <input type="text" size="4" value="2008"> to <input type="text" size="4" value="2020"></small></p>
-                    </div>
+                    <p><small>Custom range: <input type="text" size="5" value="2008"> to <input type="text" size="5" value="2020"></small></p>
                 </div>
                 <hr>
                 <small><a data-toggle="collapse" href="#sourcetitle" role="button" aria-expanded="false" aria-controls="sourcetitle"><strong><i class="fas fa-book-open"></i> &nbsp;Source Title</strong></a></small>
@@ -109,22 +96,13 @@
                 <div class="multi-collapse mt-1" id="keywords">
                     <div class="container small">
                         <div class="row">
-                            <span class="mais">+ </span>&nbsp;Evidence-based software engineering
-                        </div>
-                        <div class="row pl-3">
-                            Effect size
-                        </div>
-                        <div class="row pl-3">
-                            Meta-analysis
-                        </div>
-                        <div class="row pl-3">
-                            Families of experiments
-                        </div>
-                        <div class="row pl-3">
-                            Reproducible research
+                            <span class="mais">+ </span>&nbsp;<strong>Evidence-based software engineering</strong>
                         </div>
                         <div class="row">
-                            <span class="mais">+ </span>&nbsp;Software engineering
+                            <span class="mais">+ </span>&nbsp;<strong>Software engineering</strong>
+                        </div>
+                        <div class="row">
+                            <span class="mais">+ </span>&nbsp;Requirements
                         </div>
                     </div>
                 </div>
@@ -142,10 +120,6 @@
                         </div>    
                         <div class="row">
                             <div class="col-10 pl-0"><span class="mais">+</span> French</div>
-                            <div class="col-2">(1)</div>
-                        </div>    
-                        <div class="row">
-                            <div class="col-10 pl-0"><span class="mais">+</span> Chinese</div>
                             <div class="col-2">(1)</div>
                         </div>    
                     </div>
@@ -250,9 +224,6 @@
             Chicoutimi (Québec)
             <br>
             Canada  G7H 2B1
-            <br><br>
-            418 545-5011<br>
-            1 800 463-9880 (sans frais)
           </small>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 pt-3">
@@ -267,15 +238,6 @@
     <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script>
-        var slider = document.getElementById("yearslider");
-        var output = document.getElementById("demo");
-        output.innerHTML = slider.value;
-        
-        slider.oninput = function() {
-          output.innerHTML = this.value;
-        }
-    </script>
     <script>
         function checkAll(){
             if ($('.all').is(':checked')) {
